@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexora Digital &mdash; Engineering Digital Transformation</title>
+  <meta name="description" content="Nexora Digital is a technology consultancy specializing in web engineering, cloud architecture, cybersecurity and digital strategy." />
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       NAVIGATION BAR
+       Fixed to the viewport. Starts as a glass panel over the
+       hero, then solidifies into a dark bar on scroll (handled
+       in script.js by toggling the .scrolled class).
+  ========================================================== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="Nexora Digital home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="34" height="34">
+            <polygon points="20,2 38,11 38,29 20,38 2,29 2,11" class="logo-hex"></polygon>
+            <polygon points="20,10 31,15.5 31,24.5 20,30 9,24.5 9,15.5" class="logo-hex-inner"></polygon>
+          </svg>
+        </span>
+        <span class="logo-text">Nexora<span class="logo-accent">.</span></span>
+      </a>
+
+      <!-- Primary navigation -->
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link active-link" data-section="home">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link" data-section="services">Services</a></li>
+        <li class="nav-item"><a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="nav-cta">Let's Talk</a>
+
+      <!-- Hamburger toggle (mobile only) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- =========================================================
+       HERO SECTION
+  ========================================================== -->
+  <section class="hero" id="home">
+    <div class="hero-backdrop" aria-hidden="true">
+      <span class="orb orb-one"></span>
+      <span class="orb orb-two"></span>
+      <span class="grid-overlay"></span>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow fade-up">Digital Engineering Studio</p>
+      <h1 class="hero-title">
+        <span class="fade-up" style="--d:0.05s">We build the systems</span>
+        <span class="fade-up" style="--d:0.18s">behind modern business.</span>
+      </h1>
+      <p class="hero-subtitle fade-up" style="--d:0.32s">
+        Nexora Digital partners with ambitious teams to design, secure, and scale
+        the software that runs their business &mdash; from the first sketch to production.
+      </p>
+      <div class="hero-actions fade-up" style="--d:0.46s">
+        <a href="#services" class="btn btn-primary">Explore Our Work</a>
+        <a href="#contact" class="btn btn-ghost">Start a Project &rarr;</a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span class="scroll-cue-dot"></span>
+    </a>
+  </section>
+
+  <!-- =========================================================
+       ABOUT SECTION
+  ========================================================== -->
+  <section class="section about" id="about">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="eyebrow">Who We Are</p>
+        <h2>Built by engineers, trusted by operators.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Founded in 2016, Nexora Digital began as a three-person engineering pod solving
+            infrastructure problems for early-stage startups. Today, we're a full-service
+            studio of designers, architects, and security specialists helping companies of
+            every size ship software they can trust.
+          </p>
+          <p>
+            We believe great digital products sit at the intersection of clean engineering,
+            thoughtful design, and airtight security &mdash; and that no single discipline should
+            be an afterthought. Every engagement starts with understanding the business problem,
+            not the tech stack.
+          </p>
+        </div>
+
+        <ul class="stat-grid reveal">
+          <li class="stat-card">
+            <span class="stat-number">120+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </li>
+          <li class="stat-card">
+            <span class="stat-number">45</span>
+            <span class="stat-label">Enterprise Clients</span>
+          </li>
+          <li class="stat-card">
+            <span class="stat-number">8</span>
+            <span class="stat-label">Years in Operation</span>
+          </li>
+          <li class="stat-card">
+            <span class="stat-number">99.9%</span>
+            <span class="stat-label">Platform Uptime</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SERVICES SECTION
+  ========================================================== -->
+  <section class="section services" id="services">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="eyebrow">What We Do</p>
+        <h2>End-to-end capability, not a la carte tasks.</h2>
+      </div>
+
+      <div class="card-grid">
+
+        <article class="service-card reveal">
+          <div class="card-icon" aria-hidden="true">&#128187;</div>
+          <h3>Web &amp; Product Engineering</h3>
+          <p>Custom web applications and platforms built on modern, maintainable
+             architectures &mdash; from customer-facing products to internal tooling.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="card-icon" aria-hidden="true">&#9729;&#65039;</div>
+          <h3>Cloud &amp; Infrastructure</h3>
+          <p>Scalable cloud architecture, CI/CD pipelines, and infrastructure-as-code
+             that keeps deployments fast and systems resilient.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="card-icon" aria-hidden="true">&#128274;</div>
+          <h3>Cybersecurity &amp; Risk</h3>
+          <p>Security audits, threat modeling, and hardened system design so your
+             product ships resilient by default, not as a patch job later.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="card-icon" aria-hidden="true">&#128200;</div>
+          <h3>Digital Strategy</h3>
+          <p>Technology roadmaps and decision frameworks that align engineering
+             investment with real business outcomes.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="card-icon" aria-hidden="true">&#127912;</div>
+          <h3>Product Design &amp; UX</h3>
+          <p>Interfaces designed around how people actually work, backed by
+             research and iterated with real user feedback.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="card-icon" aria-hidden="true">&#9881;&#65039;</div>
+          <h3>Systems Integration</h3>
+          <p>Connecting the tools your business already relies on into a single,
+             coherent operating layer.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PORTFOLIO SECTION
+  ========================================================== -->
+  <section class="section portfolio" id="portfolio">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Case studies from recent engagements.</h2>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-card reveal">
+          <div class="portfolio-media grad-one" aria-hidden="true"></div>
+          <div class="portfolio-body">
+            <span class="tag">FinTech</span>
+            <h3>Ledger &mdash; Real-Time Payments Dashboard</h3>
+            <p>Rebuilt a legacy reconciliation system into a real-time dashboard
+               processing 2M+ daily transactions with sub-second latency.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal">
+          <div class="portfolio-media grad-two" aria-hidden="true"></div>
+          <div class="portfolio-body">
+            <span class="tag">Healthcare</span>
+            <h3>Meridian Health &mdash; Patient Portal</h3>
+            <p>Designed and shipped a HIPAA-compliant patient portal used by
+               over 300,000 active patients across 12 clinics.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal">
+          <div class="portfolio-media grad-three" aria-hidden="true"></div>
+          <div class="portfolio-body">
+            <span class="tag">Logistics</span>
+            <h3>Routewise &mdash; Fleet Operations Platform</h3>
+            <p>Built a route-optimization engine that cut average delivery
+               time by 23% across a 400-vehicle fleet.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTACT SECTION
+  ========================================================== -->
+  <section class="section contact" id="contact">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="eyebrow">Get In Touch</p>
+        <h2>Tell us what you're building.</h2>
+      </div>
+
+      <div class="contact-grid reveal">
+        <form class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Jordan Lee" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="jordan@company.com" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <div class="info-block">
+            <h4>Studio</h4>
+            <p>221 Baker Street, Suite 400<br />San Francisco, CA 94103</p>
+          </div>
+          <div class="info-block">
+            <h4>Email</h4>
+            <p>hello@nexoradigital.com</p>
+          </div>
+          <div class="info-block">
+            <h4>Follow</h4>
+            <p>LinkedIn &middot; GitHub &middot; Twitter</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Nexora Digital. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
